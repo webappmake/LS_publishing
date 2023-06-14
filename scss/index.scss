@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import "var", "reset", "mixins";
+
+/*----------------------------------- Common Layout -----------------------------------*/
+.charger-layout {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-background;
+    .external {
+        position: fixed; top: 0; left: 0; 
+        border: 1px solid blue;
+        &.top {
+            width: 100%;
+            height: $external-height;
+        }
+        &.right {            
+            width: $external-height;
+            height: 100%;
+            left: inherit; right: 0;
+        }
+        &.bottom {            
+            width: 100%;
+            height: $external-height;
+            top: inherit; bottom: 0;
+        }
+        &.left { 
+            width: $external-height;
+            height: 100%;
+        }        
+    }
+    .charger {
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid greenyellow;       
+        height: calc(100vh - #{$external-height}*2);
+        margin: $external-height;
+        .row {
+            @include flex;
+            width: 100%;
+            height: auto;
+            margin: $gutter-md 0; 
+            justify-content: space-between;
+            .group {
+                position: relative;
+                &.lined {
+                    border: 1px solid red;
+                    padding: $gutter-xs;
+                    padding-left: $gutter-xxl;
+                }
+                & + .group { margin-left: $gutter-xxl; }
+                .tit {
+                    @include flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 160px;
+                    height: 60px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    border: 1px solid red;
+                    position: absolute; top: 0; left: 0; 
+                }
+            }
+        }
+        .unit {
+            display: inline-block;
+            width: 90px;
+            height: 200px;
+            border: 2px solid red; 
+        }
+        .facility {
+            display: inline-block;
+            width: 170px;
+            height: 100%;
+            background-color: $color-gray;
+        }      
+    }
+}

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* ------------------------------------------------------- FONT ------------------------------------------------------- */
+/* ------------------------------------------------------- COLOR ------------------------------------------------------- */
+/* ------------------------------------------------------- 충전기 그룹 색상 ------------------------------------------------------- */
+/* ------------------------------------------------------- LAYOUT ------------------------------------------------------- */
+body, div, h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd, a, img, p, span,
+form, fieldset, legend, label, input, select, button,
+table, caption, colgroup, col, thead, tbody, tr, th, td, address, tfoot,
+header, nav, footer, section, article, mark, figure, figcaption, time, aside, small, blockquote {
+  margin: 0;
+  padding: 0; }
+
+html, header, nav, footer, section, article, figure, figcaption, aside, small {
+  display: block; }
+
+body {
+  position: relative;
+  overflow: hidden;
+  background-color: #272727;
+  color: #ffffff;
+  font-family: "Roboto", "Noto Sans KR", sans-serif !important;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  margin-left: auto;
+  margin-right: auto;
+  word-break: keep-all;
+  -ms-word-break: keep-all; }
+
+* {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", "Noto Sans KR", sans-serif !important;
+  margin: 0; }
+
+ul, ol {
+  list-style: none; }
+
+img, fieldset, input, button {
+  border: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
+a:focus {
+  outline: none !important; }
+
+input, button, img {
+  vertical-align: middle; }
+
+.skip, caption {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+  line-height: 0;
+  font-size: 0;
+  position: absolute;
+  left: -999px; }
+
+/*----------------------------------- Common Layout -----------------------------------*/
+.charger-layout {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #272727; }
+  .charger-layout .external {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px solid blue; }
+    .charger-layout .external.top {
+      width: 100%;
+      height: 100px; }
+    .charger-layout .external.right {
+      width: 100px;
+      height: 100%;
+      left: inherit;
+      right: 0; }
+    .charger-layout .external.bottom {
+      width: 100%;
+      height: 100px;
+      top: inherit;
+      bottom: 0; }
+    .charger-layout .external.left {
+      width: 100px;
+      height: 100%; }
+  .charger-layout .charger {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid greenyellow;
+    height: calc(100vh - 100px*2);
+    margin: 100px; }
+    .charger-layout .charger .row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+      justify-content: space-between; }
+      .charger-layout .charger .row .group {
+        position: relative; }
+        .charger-layout .charger .row .group.lined {
+          border: 1px solid red;
+          padding: 8px;
+          padding-left: 120px; }
+        .charger-layout .charger .row .group + .group {
+          margin-left: 120px; }
+        .charger-layout .charger .row .group .tit {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 160px;
+          height: 60px;
+          font-size: 20px;
+          font-weight: 600;
+          border: 1px solid red;
+          position: absolute;
+          top: 0;
+          left: 0; }
+    .charger-layout .charger .unit {
+      display: inline-block;
+      width: 90px;
+      height: 200px;
+      border: 2px solid red; }
+    .charger-layout .charger .facility {
+      display: inline-block;
+      width: 170px;
+      height: 100%;
+      background-color: #777777; }

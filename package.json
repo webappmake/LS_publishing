@@ -1,0 +1,14 @@
+{
+  "name": "LS_publishing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/webappmake/LS_publishing.git",
+  "author": "hyunjung.ryu <hyunjung.ryu@lgepartner.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "scripts": {
+    "sass": "node-sass -w scss -o css"
+  }
+}
