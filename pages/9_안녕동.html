@@ -9,141 +9,134 @@
   <meta http-equiv="Pragma" content="no-cache"/>  
   <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
   <link rel="stylesheet" type="text/css" href="../css/index.css" />
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="charger-layout">
-    <h2 class="skip"></h2>
-    <section class="charger">
+  <div class="layout">
+    <!-- External : top, right, bottom, left 이중클래스 사용 -->
+    <aside class="external">
+
+    </aside>
+    <!-- Internal -->
+    <main class="internal">
       <div class="row">
-        <div class="group lined">
-          <h4 class="tit">
-            <span>D zone</span>
-          </h4>
-          <span class="unit"></span>
-          <span class="unit"></span>
+        <!-- Group : 5개의 상태값이 있으며, 이중클래스 사용으로 구분 -->
+        <section class="group a">
+          <h4 class="group-id">A</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">01</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">01-1</p>
+                  <div class="connector-info">
+                    <!-- 
+                      Type : 5개의 상태값이 있으며, 이중클래스 사용으로 구분
+                      <p class="type a"><span class="skip">A type</span></p>
+                      <p class="type b"><span class="skip">B type</span></p>
+                      <p class="type c"><span class="skip">C type</span></p>
+                      <p class="type d"><span class="skip">D type</span><span class="percentage">70%</span></p>
+                      <p class="type e"><span class="skip">E type</span><span class="percentage">70%</span></p>
+                    -->
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <!-- 
+                      Status : 10개의 상태값이 있으며, 이중클래스 사용으로 구분
+                      <p class="status Unknown"><span class="skip">알수없음</span></p>
+                      <p class="status abnormality"><span class="skip">통신이상</span></p>
+                      <p class="status waiting"><span class="skip">충전대기</span></p>
+                      <p class="status charging"><span class="skip">충전중</span></p>
+                      <p class="status stop"><span class="skip">운영중지</span></p>
+                      <p class="status inspection"><span class="skip">점검중</span></p>
+                      <p class="status reservation"><span class="skip">예약중</span></p>
+                      <p class="status unconfirmed"><span class="skip">상태미확인</span></p>
+                      <p class="status pause"><span class="skip">일시정지</span></p>
+                      <p class="status complete"><span class="skip">충전완료</span></p>
+                    -->
+                    <p class="status Unknown"><span class="skip">알수없음</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">01-2</p>
+                  <div class="connector-info">
+                    <p class="type b"><span class="skip">B type</span></p>
+                    <p class="status abnormality"><span class="skip">통신이상</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //charger -->
+          </div>
+        </section>
 
-          <span class="unit"></span>
-          <span class="unit"></span>
+        <section class="group b">
+          <h4 class="group-id">B</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">01</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">01-1</p>
+                  <div class="connector-info">
+                    <p class="type c"><span class="skip">C type</span></p>
+                    <p class="status stop"><span class="skip">운영중지</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">01-2</p>
+                  <div class="connector-info">
+                    <p class="type d"><span class="skip">D type</span><span class="percentage">70%</span></p>
+                    <p class="status inspection"><span class="skip">점검중</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //charger -->
+            <div class="charger">
+              <h6 class="charger-id">02</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">02-1</p>
+                  <div class="connector-info">
+                    <p class="type e"><span class="skip">C type</span></p>
+                    <p class="status reservation"><span class="skip">예약중</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">02-2</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">D type</span><span class="percentage">70%</span></p>
+                    <p class="status unconfirmed"><span class="skip">상태미확인</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">02-3</p>
+                  <div class="connector-info">
+                    <p class="type b"><span class="skip">C type</span></p>
+                    <p class="status pause"><span class="skip">일시정지</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">02-4</p>
+                  <div class="connector-info">
+                    <p class="type c"><span class="skip">C type</span></p>
+                    <p class="status complete"><span class="skip">충전완료</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //charger -->
+          </div>
+        </section>
 
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-      <!-- ----------------------------- -->
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="group lined">
-          <h4 class="tit">
-            <span>C zone</span>
-          </h4>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-        </div>   
-      </div>
-
-      <div class="row">
-        <div class="group lined">
-          <h4 class="tit">
-            <span>A zone</span>
-          </h4>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-        </div>   
-      </div>
-
-      <div class="row">
-        <div class="group lined">
-          <h4 class="tit">
-            <span>B zone</span>
-          </h4>
-          <span class="unit"></span>
-          <span class="unit"></span>
-
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-          <span class="unit"></span>
-        </div>   
       </div>
 
-    </section>
+    </main>
   </div>  
 </body>
 </html>

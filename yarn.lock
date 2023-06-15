@@ -23,11 +23,6 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@fontsource/roboto@^5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-5.0.3.tgz#bff6ce627b8c537e8f56e6f2bba221f425bfdf78"
-  integrity sha512-jbZDFwEFARDlo8TqG7th/xjhuq87GYfFpFb+uxuy+0Ng1bhRVgBRWlLj8+WIKhCTOr+h4QXbjpybLWFLUirOwQ==
-
 "@types/minimist@^1.2.0":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"

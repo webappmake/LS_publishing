@@ -16,9 +16,9 @@ html, header, nav, footer, section, article, figure, figcaption, aside, small {
 body {
   position: relative;
   overflow: hidden;
-  background-color: #272727;
+  background-color: #312f2d;
   color: #ffffff;
-  font-family: "Roboto", "Noto Sans KR", sans-serif !important;
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif !important;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.4;
@@ -31,7 +31,7 @@ body {
   box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", "Noto Sans KR", sans-serif !important;
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif !important;
   margin: 0; }
 
 ul, ol {
@@ -64,33 +64,33 @@ input, button, img {
   left: -999px; }
 
 /*----------------------------------- Common Layout -----------------------------------*/
-.charger-layout {
+.layout {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: #272727; }
-  .charger-layout .external {
+  background-color: #312f2d; }
+  .layout .external {
     position: fixed;
     top: 0;
     left: 0;
     border: 1px solid blue; }
-    .charger-layout .external.top {
+    .layout .external.top {
       width: 100%;
       height: 100px; }
-    .charger-layout .external.right {
+    .layout .external.right {
       width: 100px;
       height: 100%;
       left: inherit;
       right: 0; }
-    .charger-layout .external.bottom {
+    .layout .external.bottom {
       width: 100%;
       height: 100px;
       top: inherit;
       bottom: 0; }
-    .charger-layout .external.left {
+    .layout .external.left {
       width: 100px;
       height: 100%; }
-  .charger-layout .charger {
+  .layout .internal {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -101,7 +101,7 @@ input, button, img {
     border: 1px solid greenyellow;
     height: calc(100vh - 100px*2);
     margin: 100px; }
-    .charger-layout .charger .row {
+    .layout .internal .row {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -110,36 +110,151 @@ input, button, img {
       height: auto;
       margin: 20px 0;
       justify-content: space-between; }
-      .charger-layout .charger .row .group {
-        position: relative; }
-        .charger-layout .charger .row .group.lined {
-          border: 1px solid red;
-          padding: 8px;
-          padding-left: 120px; }
-        .charger-layout .charger .row .group + .group {
-          margin-left: 120px; }
-        .charger-layout .charger .row .group .tit {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 160px;
-          height: 60px;
-          font-size: 20px;
-          font-weight: 600;
-          border: 1px solid red;
+
+.internal .group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FF5050;
+  border-radius: 3px;
+  text-align: center; }
+  .internal .group-id {
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 32px;
+    background-color: #FF5050; }
+  .internal .group-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px 6px 6px; }
+  .internal .group.a {
+    border-color: #FF5050; }
+    .internal .group.a .group-id {
+      background-color: #FF5050; }
+  .internal .group.b {
+    border-color: #EA5DC2; }
+    .internal .group.b .group-id {
+      background-color: #EA5DC2; }
+  .internal .group.c {
+    border-color: #9D50FF; }
+    .internal .group.c .group-id {
+      background-color: #9D50FF; }
+  .internal .group.d {
+    border-color: #5076FF; }
+    .internal .group.d .group-id {
+      background-color: #5076FF; }
+  .internal .group.e {
+    border-color: #28AD8D; }
+    .internal .group.e .group-id {
+      background-color: #28AD8D; }
+
+.charger + .charger {
+  margin-left: 8px; }
+
+.charger-id {
+  width: auto;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 35px;
+  background-color: #1e1e1e;
+  border-radius: 3px;
+  margin-bottom: 4px; }
+
+.charger-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .charger-inner .connector {
+    width: 98px;
+    height: 160px;
+    overflow: hidden;
+    background-color: #272727;
+    border: 1px solid #3F3F3F;
+    border-radius: 3px; }
+    .charger-inner .connector + .connector {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+    .charger-inner .connector-id {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 2; }
+    .charger-inner .connector-info {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 132px;
+      background-color: #1e1e1e;
+      border-radius: 3px;
+      margin: 0 3px 3px 3px; }
+      .charger-inner .connector-info .type {
+        position: relative;
+        width: 32px;
+        height: 80px;
+        overflow: hidden;
+        margin-top: 4px;
+        background: url(../img/img_connector.png) no-repeat 0 0/auto 80px; }
+        .charger-inner .connector-info .type.a {
+          background-position-x: 0; }
+        .charger-inner .connector-info .type.b {
+          width: 36px;
+          background-position-x: -72px; }
+        .charger-inner .connector-info .type.c {
+          width: 36px;
+          background-position-x: -148px; }
+        .charger-inner .connector-info .type.d {
+          background-position-x: -224px; }
+        .charger-inner .connector-info .type.e {
+          background-position-x: -296px; }
+        .charger-inner .connector-info .type .percentage {
+          width: 26px;
+          height: 16px;
+          font-size: 8px;
+          line-height: 16px;
+          background-color: rgba(30, 30, 30, 0.8);
+          border-radius: 16px;
           position: absolute;
-          top: 0;
-          left: 0; }
-    .charger-layout .charger .unit {
-      display: inline-block;
-      width: 90px;
-      height: 200px;
-      border: 2px solid red; }
-    .charger-layout .charger .facility {
-      display: inline-block;
-      width: 170px;
-      height: 100%;
-      background-color: #777777; }
+          top: calc(50% - 8px);
+          left: calc(50% - 13px); }
+      .charger-inner .connector-info .status {
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        background: url(../img/ic_status.png) no-repeat 0 0/auto 16px;
+        margin: 4px 0; }
+        .charger-inner .connector-info .status.Unknown {
+          background-position-x: 0; }
+        .charger-inner .connector-info .status.abnormality {
+          background-position-x: -16px; }
+        .charger-inner .connector-info .status.waiting {
+          background-position-x: -32px; }
+        .charger-inner .connector-info .status.charging {
+          background-position-x: -48px; }
+        .charger-inner .connector-info .status.stop {
+          background-position-x: -64px; }
+        .charger-inner .connector-info .status.inspection {
+          background-position-x: -80px; }
+        .charger-inner .connector-info .status.reservation {
+          background-position-x: -96px; }
+        .charger-inner .connector-info .status.unconfirmed {
+          background-position-x: -112px; }
+        .charger-inner .connector-info .status.pause {
+          background-position-x: -128px; }
+        .charger-inner .connector-info .status.complete {
+          background-position-x: -144px; }
+      .charger-inner .connector-info .vin {
+        font-size: 10px;
+        font-weight: 600; }
