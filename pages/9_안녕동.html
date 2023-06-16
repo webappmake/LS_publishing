@@ -20,64 +20,64 @@
     </aside>
     <!-- Internal -->
     <main class="internal">
-      <div class="row">
+      <h3 class="row-title">D zone</h3>
+      <div class="row">        
         <!-- Group : 5개의 상태값이 있으며, 이중클래스 사용으로 구분 -->
         <section class="group a">
-          <h4 class="group-id">A</h4>
-          <div class="group-inner">
+          <h4 class="group-id">PB 10</h4>
+          <div class="group-inner col">
             <div class="charger">
-              <h6 class="charger-id">01</h6>
+              <h6 class="charger-id">20</h6>
               <div class="charger-inner">
                 <div class="connector">
-                  <p class="connector-id">01-1</p>
+                  <p class="connector-id">20-B</p>
                   <div class="connector-info">
-                    <!-- 
-                      Type : 5개의 상태값이 있으며, 이중클래스 사용으로 구분
-                      <p class="type a"><span class="skip">A type</span></p>
-                      <p class="type b"><span class="skip">B type</span></p>
-                      <p class="type c"><span class="skip">C type</span></p>
-                      <p class="type d"><span class="skip">D type</span><span class="percentage">70%</span></p>
-                      <p class="type e"><span class="skip">E type</span><span class="percentage">70%</span></p>
-                    -->
                     <p class="type a"><span class="skip">A type</span></p>
-                    <!-- 
-                      Status : 10개의 상태값이 있으며, 이중클래스 사용으로 구분
-                      <p class="status Unknown"><span class="skip">알수없음</span></p>
-                      <p class="status abnormality"><span class="skip">통신이상</span></p>
-                      <p class="status waiting"><span class="skip">충전대기</span></p>
-                      <p class="status charging"><span class="skip">충전중</span></p>
-                      <p class="status stop"><span class="skip">운영중지</span></p>
-                      <p class="status inspection"><span class="skip">점검중</span></p>
-                      <p class="status reservation"><span class="skip">예약중</span></p>
-                      <p class="status unconfirmed"><span class="skip">상태미확인</span></p>
-                      <p class="status pause"><span class="skip">일시정지</span></p>
-                      <p class="status complete"><span class="skip">충전완료</span></p>
-                    -->
-                    <p class="status Unknown"><span class="skip">알수없음</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
                     <p class="vin">123가 1234</p>
                   </div>
                 </div>
                 <div class="connector">
-                  <p class="connector-id">01-2</p>
+                  <p class="connector-id">20-A</p>
                   <div class="connector-info">
-                    <p class="type b"><span class="skip">B type</span></p>
-                    <p class="status abnormality"><span class="skip">통신이상</span></p>
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
                     <p class="vin">123가 1234</p>
                   </div>
                 </div>
               </div>            
-            </div><!-- //charger -->
-          </div>
-        </section>
-
-        <section class="group b">
-          <h4 class="group-id">B</h4>
-          <div class="group-inner">
+            </div><!-- //.charger -->
             <div class="charger">
-              <h6 class="charger-id">01</h6>
+              <h6 class="charger-id">21</h6>
               <div class="charger-inner">
                 <div class="connector">
-                  <p class="connector-id">01-1</p>
+                  <p class="connector-id">21-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">21-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group b">
+          <h4 class="group-id">PB 11</h4>
+          <div class="group-inner col">
+            <div class="charger">
+              <h6 class="charger-id">22</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">22-B</p>
                   <div class="connector-info">
                     <p class="type c"><span class="skip">C type</span></p>
                     <p class="status stop"><span class="skip">운영중지</span></p>
@@ -85,7 +85,7 @@
                   </div>
                 </div>
                 <div class="connector">
-                  <p class="connector-id">01-2</p>
+                  <p class="connector-id">22-A</p>
                   <div class="connector-info">
                     <p class="type d"><span class="skip">D type</span><span class="percentage">70%</span></p>
                     <p class="status inspection"><span class="skip">점검중</span></p>
@@ -93,50 +93,736 @@
                   </div>
                 </div>
               </div>            
-            </div><!-- //charger -->
+            </div><!-- //.charger -->
             <div class="charger">
-              <h6 class="charger-id">02</h6>
+              <h6 class="charger-id">23</h6>
               <div class="charger-inner">
                 <div class="connector">
-                  <p class="connector-id">02-1</p>
+                  <p class="connector-id">23-A</p>
                   <div class="connector-info">
-                    <p class="type e"><span class="skip">C type</span></p>
-                    <p class="status reservation"><span class="skip">예약중</span></p>
-                    <p class="vin">123가 1234</p>
-                  </div>
-                </div>
-                <div class="connector">
-                  <p class="connector-id">02-2</p>
-                  <div class="connector-info">
-                    <p class="type a"><span class="skip">D type</span><span class="percentage">70%</span></p>
+                    <p class="type a"><span class="skip">A type</span></p>
                     <p class="status unconfirmed"><span class="skip">상태미확인</span></p>
                     <p class="vin">123가 1234</p>
                   </div>
                 </div>
                 <div class="connector">
-                  <p class="connector-id">02-3</p>
+                  <p class="connector-id">23-B</p>
                   <div class="connector-info">
-                    <p class="type b"><span class="skip">C type</span></p>
-                    <p class="status pause"><span class="skip">일시정지</span></p>
-                    <p class="vin">123가 1234</p>
-                  </div>
-                </div>
-                <div class="connector">
-                  <p class="connector-id">02-4</p>
-                  <div class="connector-info">
-                    <p class="type c"><span class="skip">C type</span></p>
-                    <p class="status complete"><span class="skip">충전완료</span></p>
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status unconfirmed"><span class="skip">상태미확인</span></p>
                     <p class="vin">123가 1234</p>
                   </div>
                 </div>
               </div>            
-            </div><!-- //charger -->
+            </div><!-- //.charger -->
           </div>
-        </section>
+        </section><!-- //.group -->
+        <section class="group c">
+          <h4 class="group-id">PB 12</h4>
+          <div class="group-inner col">
+            <div class="charger">
+              <h6 class="charger-id">24</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">24-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">24-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">25</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">25-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">25-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group d">
+          <h4 class="group-id">PB 13</h4>
+          <div class="group-inner col">
+            <div class="charger">
+              <h6 class="charger-id">26</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">26-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">26-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">27</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">27-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">27-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group a">
+          <h4 class="group-id">PB 14</h4>
+          <div class="group-inner col">
+            <div class="charger">
+              <h6 class="charger-id">28</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">28-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">28-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">29</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">29-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">29-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group b">
+          <h4 class="group-id">PB 15</h4>
+          <div class="group-inner col">
+            <div class="charger">
+              <h6 class="charger-id">30</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">30-B</p>
+                  <div class="connector-info">
+                    <p class="type c"><span class="skip">C type</span></p>
+                    <p class="status stop"><span class="skip">운영중지</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">30-A</p>
+                  <div class="connector-info">
+                    <p class="type d"><span class="skip">D type</span><span class="percentage">70%</span></p>
+                    <p class="status inspection"><span class="skip">점검중</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">31</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">31-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">31-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
 
+        <section class="group c test">
+          <h4 class="group-id">PB 16</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">32</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">32-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">32-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger border-right">
+              <h6 class="charger-id">33</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">33-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">33-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="breakpoints"></div>
+            <div class="charger">
+              <h6 class="charger-id">34</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">34-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">34-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        
+        <section class="group d test">
+          <h4 class="group-id">PB 17</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">35</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">35-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">35-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group d">
+          <h4 class="group-id">PB 17</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">35</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">35-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">35-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        </div>        
+      
+    
+    
+      
       </div>
+       
+      </div><!-- //.row -->
 
-    </main>
+
+      <h3 class="row-title">C zone</h3>
+      <div class="row display-none">
+        <section class="group a">
+          <h4 class="group-id">PB 6</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">11</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">11-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">11-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">12</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">12-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">12-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group b">
+          <h4 class="group-id">PB 7</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">13</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">13-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">13-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">14</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">14-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">14-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group c">
+          <h4 class="group-id">PB 8</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">15</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">15-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">15-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">16</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">16-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">16-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group d">
+          <h4 class="group-id">PB 9</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">17</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">17-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">17-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">18</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">18-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">18-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+      </div><!-- //.row-->
+
+      <h3 class="row-title">A zone</h3>
+      <div class="row display-none">
+        <section class="group d">
+          <h4 class="group-id">PB 1</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">1</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">01-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">01-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">2</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">02-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">12-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group a">
+          <h4 class="group-id">PB 2</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">3</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">03-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">03-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">4</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">04-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">04-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group b">
+          <h4 class="group-id">PB 3</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">5</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">05-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">05-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">6</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">06-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">06-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+        <section class="group c">
+          <h4 class="group-id">PB 4</h4>
+          <div class="group-inner">
+            <div class="charger">
+              <h6 class="charger-id">7</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">07-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">07-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+            <div class="charger">
+              <h6 class="charger-id">8</h6>
+              <div class="charger-inner">
+                <div class="connector">
+                  <p class="connector-id">08-A</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <p class="connector-id">08-B</p>
+                  <div class="connector-info">
+                    <p class="type a"><span class="skip">A type</span></p>
+                    <p class="status waiting"><span class="skip">충전대기</span></p>
+                    <p class="vin">123가 1234</p>
+                  </div>
+                </div>
+              </div>            
+            </div><!-- //.charger -->
+          </div>
+        </section><!-- //.group -->
+      </div><!-- //.row-->
+      
+    </main><!-- //.internal -->
   </div>  
 </body>
 </html>
