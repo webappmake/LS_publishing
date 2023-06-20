@@ -71,18 +71,18 @@ input, button, img {
 
 /*----------------------------------- Sample : 삭제가능 -----------------------------------*/
 .sample > h2 {
-  font-size: 0.7031vw;
+  font-size: 18px;
   font-weight: 500;
   padding: 0.7813vw; }
 
 .sample > button {
-  min-width: 3.9063vw;
+  min-width: 100px;
   color: #ffffff;
-  font-size: 0.5469vw;
+  font-size: 14px;
   padding: 0.3125vw 0.4688vw;
   background-color: #ED8533;
   border-radius: 0.1172vw;
-  margin: 0.1563vw; }
+  margin: 4px; }
   .sample > button:first-of-type {
     margin-left: 0.7813vw; }
 
@@ -96,7 +96,7 @@ input, button, img {
     position: fixed;
     top: 0;
     left: 0;
-    border: 0.0391vw solid blue; }
+    border: 1px solid blue; }
     .layout .external.top {
       width: 100%;
       height: 3.9063vw; }
@@ -126,7 +126,7 @@ input, button, img {
     .layout .internal .row-title {
       align-self: flex-start;
       color: #ED8533;
-      font-size: 1.1719vw;
+      font-size: 30px;
       font-weight: 600;
       line-height: 1.4; }
     .layout .internal .flex-wrap {
@@ -153,7 +153,7 @@ input, button, img {
         flex-basis: 100%; }
         .layout .internal .row .breakpoints + .charger {
           margin-left: 0;
-          margin-top: 1.9531vw; }
+          margin-top: 50px; }
 
 .internal .group {
   display: -webkit-box;
@@ -163,58 +163,58 @@ input, button, img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 0.0781vw solid #FF5050;
+  border: 2px solid #FF5050;
   border-radius: 0.1172vw;
   text-align: center; }
   .internal .group.tetris {
     position: relative; }
     .internal .group.tetris.tetris-type1 .group-inner {
-      width: 16.4063vw;
-      height: 18.0469vw; }
+      width: 420px;
+      height: 462px; }
       .internal .group.tetris.tetris-type1 .group-inner .charger:nth-child(3) {
         margin-top: 0;
-        margin-left: 0.5469vw; }
+        margin-left: 14px; }
       .internal .group.tetris.tetris-type1 .group-inner .charger:nth-child(2)::before {
         content: "";
-        width: 8.1250vw;
-        height: 9.6484vw;
+        width: 208px;
+        height: 247px;
         background-color: #312f2d;
-        border: 0.0781vw solid #9D50FF;
+        border: 2px solid #9D50FF;
         border-bottom: 0;
         border-right: 0;
         position: absolute;
-        bottom: -0.0781vw;
-        right: -0.0391vw;
+        bottom: -2px;
+        right: -1px;
         z-index: 999; }
     .internal .group.tetris.tetris-type2 .group-inner .charger + .charger {
       margin: 0; }
     .internal .group.tetris.tetris-type2 .group-inner .charger:nth-child(1) {
       position: absolute;
-      bottom: -0.0781vw;
-      left: -8.2031vw;
-      width: 8.2422vw;
-      height: 9.6484vw;
-      padding: 1.4844vw 0.2734vw 0.3125vw;
+      bottom: -2px;
+      left: -210px;
+      width: 211px;
+      height: 247px;
+      padding: 38px 7px 8px;
       background-color: #312f2d;
-      border: 0.0781vw solid #5076FF;
+      border: 2px solid #5076FF;
       border-right: 0;
       z-index: 999; }
     .internal .group.tetris.tetris-type2 .group-inner .charger:nth-child(3) {
-      margin-top: 1.9531vw; }
+      margin-top: 50px; }
     .internal .group.tetris.tetris-type3 .group-inner {
-      width: 16.4063vw;
-      height: calc(18.0469vw + 1.6406vw + 0.7813vw*2); }
+      width: 420px;
+      height: calc(462px + 42px + 20px*2); }
       .internal .group.tetris.tetris-type3 .group-inner .charger:nth-child(3) {
         align-self: flex-end; }
       .internal .group.tetris.tetris-type3 .group-inner .charger:nth-child(4) {
         align-self: flex-end;
-        margin-left: 0.5469vw; }
+        margin-left: 14px; }
   .internal .group-id {
     width: 100%;
-    height: 1.2500vw;
-    font-size: 0.5469vw;
+    height: 32px;
+    font-size: 14px;
     font-weight: 600;
-    line-height: 1.2500vw;
+    line-height: 32px;
     background-color: #FF5050; }
   .internal .group-inner {
     display: -webkit-box;
@@ -223,13 +223,13 @@ input, button, img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 0.3125vw 0.2344vw 0.2344vw; }
+    padding: 8px 6px 6px; }
     .internal .group-inner.col {
       flex-direction: column;
       flex-wrap: wrap; }
       .internal .group-inner.col .charger + .charger {
         margin-left: 0;
-        margin-top: 1.9531vw; }
+        margin-top: 50px; }
   .internal .group.a {
     border-color: #FF5050; }
     .internal .group.a .group-id {
@@ -252,17 +252,17 @@ input, button, img {
       background-color: #28AD8D; }
 
 .charger + .charger {
-  margin-left: 0.3125vw; }
+  margin-left: 8px; }
 
 .charger-id {
   width: auto;
-  height: 1.3672vw;
-  font-size: 0.5469vw;
+  height: 35px;
+  font-size: 14px;
   font-weight: 600;
-  line-height: 1.3672vw;
+  line-height: 35px;
   background-color: #1e1e1e;
   border-radius: 0.1172vw;
-  margin-bottom: 0.1563vw; }
+  margin-bottom: 4px; }
 
 .charger-inner {
   display: -webkit-box;
@@ -270,17 +270,17 @@ input, button, img {
   display: -ms-flexbox;
   display: flex; }
   .charger-inner .connector {
-    width: 3.8281vw;
-    height: 6.2500vw;
+    width: 98px;
+    height: 160px;
     overflow: hidden;
     background-color: #272727;
-    border: 0.0391vw solid #3F3F3F;
+    border: 1px solid #3F3F3F;
     border-radius: 0.1172vw; }
     .charger-inner .connector + .connector {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
     .charger-inner .connector-id {
-      font-size: 0.4688vw;
+      font-size: 12px;
       font-weight: 600;
       line-height: 2; }
     .charger-inner .connector-info {
@@ -291,65 +291,65 @@ input, button, img {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 5.1563vw;
+      height: 132px;
       background-color: #1e1e1e;
       border-radius: 0.1172vw;
-      margin: 0 0.1172vw 0.1172vw 0.1172vw; }
+      margin: 0 3px 3px 3px; }
       .charger-inner .connector-info .type {
         position: relative;
-        width: 1.2500vw;
-        height: 3.1250vw;
+        width: 32px;
+        height: 80px;
         overflow: hidden;
-        margin-top: 0.1563vw;
-        background: url(../img/img_connector.png) no-repeat 0 0/auto 3.125vw; }
+        margin-top: 4px;
+        background: url(../img/img_connector.png) no-repeat 0 0/auto 80px; }
         .charger-inner .connector-info .type.a {
           background-position-x: 0; }
         .charger-inner .connector-info .type.b {
-          width: 1.4063vw;
-          background-position-x: -2.8125vw; }
+          width: 36px;
+          background-position-x: -72px; }
         .charger-inner .connector-info .type.c {
-          width: 1.4063vw;
-          background-position-x: -5.7813vw; }
+          width: 36px;
+          background-position-x: -148px; }
         .charger-inner .connector-info .type.d {
-          background-position-x: -8.7500vw; }
+          background-position-x: -224px; }
         .charger-inner .connector-info .type.e {
-          background-position-x: -11.5625vw; }
+          background-position-x: -296px; }
         .charger-inner .connector-info .type .percentage {
-          width: 1.0156vw;
-          height: 0.6250vw;
-          font-size: 0.3125vw;
-          line-height: 0.6250vw;
+          width: 26px;
+          height: 16px;
+          font-size: 8px;
+          line-height: 16px;
           background-color: rgba(30, 30, 30, 0.8);
-          border-radius: 0.6250vw;
+          border-radius: 16px;
           position: absolute;
-          top: calc(50% - 0.3125vw);
-          left: calc(50% - 0.5078vw); }
+          top: calc(50% - 8px);
+          left: calc(50% - 13px); }
       .charger-inner .connector-info .status {
-        width: 0.6250vw;
-        height: 0.6250vw;
+        width: 16px;
+        height: 16px;
         overflow: hidden;
-        background: url(../img/ic_status.png) no-repeat 0 0/auto 0.625vw;
-        margin: 0.1563vw 0; }
+        background: url(../img/ic_status.png) no-repeat 0 0/auto 16px;
+        margin: 4px 0; }
         .charger-inner .connector-info .status.Unknown {
           background-position-x: 0; }
         .charger-inner .connector-info .status.abnormality {
-          background-position-x: -0.6250vw; }
+          background-position-x: -16px; }
         .charger-inner .connector-info .status.waiting {
-          background-position-x: -1.2500vw; }
+          background-position-x: -32px; }
         .charger-inner .connector-info .status.charging {
-          background-position-x: -1.8750vw; }
+          background-position-x: -48px; }
         .charger-inner .connector-info .status.stop {
-          background-position-x: -2.5000vw; }
+          background-position-x: -64px; }
         .charger-inner .connector-info .status.inspection {
-          background-position-x: -3.1250vw; }
+          background-position-x: -80px; }
         .charger-inner .connector-info .status.reservation {
-          background-position-x: -3.7500vw; }
+          background-position-x: -96px; }
         .charger-inner .connector-info .status.unconfirmed {
-          background-position-x: -4.3750vw; }
+          background-position-x: -112px; }
         .charger-inner .connector-info .status.pause {
-          background-position-x: -5.0000vw; }
+          background-position-x: -128px; }
         .charger-inner .connector-info .status.complete {
-          background-position-x: -5.6250vw; }
+          background-position-x: -144px; }
       .charger-inner .connector-info .vin {
-        font-size: 0.3906vw;
+        font-size: 10px;
         font-weight: 600; }

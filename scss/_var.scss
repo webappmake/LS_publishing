@@ -18,12 +18,20 @@ $color-D: #5076FF;
 $color-E: #28AD8D;
 /* ------------------------------------------------------- LAYOUT ------------------------------------------------------- */
 $external-height: 100px;
-
 $gutter-xs: 8px; 
 $gutter-sm: 12px;
 $gutter-md: 20px; 
 $gutter-lg: 40px; 
 $gutter-xl: 80px;
 $gutter-xxl: 120px;
-
 $radius: 3px;
+
+
+$external-height: 3.9063vw;
+$gutter-xs: 0.3125vw; 
+$gutter-sm: 0.4688vw;
+$gutter-md: 0.7813vw; 
+$gutter-lg: 1.5625vw; 
+$gutter-xl: 3.1250vw;
+$gutter-xxl: 4.6875vw;
+$radius: 0.1172vw;

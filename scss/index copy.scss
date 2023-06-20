@@ -7,18 +7,18 @@
 /*----------------------------------- Sample : 삭제가능 -----------------------------------*/
 .sample {
     & > h2 {
-        font-size: 0.7031vw;
+        font-size: 18px;
         font-weight: 500;
         padding: $gutter-md; 
     }
     & > button {
-        min-width: 3.9063vw;
+        min-width: 100px;
         color: $color-white;
-        font-size: 0.5469vw;
+        font-size: 14px;
         padding: $gutter-xs $gutter-sm;
         background-color: $color-primary;
         border-radius: $radius;
-        margin: 0.1563vw;
+        margin: 4px;
         &:first-of-type { margin-left: $gutter-md; }
     }
 }
@@ -32,7 +32,7 @@
     // Aside: External
     .external {
         position: fixed; top: 0; left: 0; 
-        border: 0.0391vw solid blue;
+        border: 1px solid blue;
         &.top {
             width: 100%;
             height: $external-height;
@@ -63,7 +63,7 @@
         .row-title {
             align-self: flex-start;
             color: $color-primary;
-            font-size: 1.1719vw;
+            font-size: 30px;
             font-weight: 600;
             line-height: 1.4;          
         }
@@ -85,7 +85,7 @@
                 flex-basis: 100%;
                 & + .charger {
                     margin-left: 0;  
-                    margin-top: 1.9531vw; 
+                    margin-top: 50px; 
                 }
             }
         }
@@ -99,7 +99,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 0.0781vw solid $color-A;
+        border: 2px solid $color-A;
         border-radius: $radius;
         text-align: center;
         //테트리스 구조
@@ -107,23 +107,23 @@
             position: relative;
             &.tetris-type1 {
                 .group-inner {
-                    width: 16.4063vw;
-                    height: 18.0469vw;
+                    width: 420px;
+                    height: 462px;
                     .charger {
                         &:nth-child(3) { 
                             margin-top: 0; 
-                            margin-left: 0.5469vw;
+                            margin-left: 14px;
                         }
                         &:nth-child(2) {
                             &::before {
                                 content: "";
-                                width: 8.1250vw;
-                                height: 9.6484vw;
+                                width: 208px;
+                                height: 247px;
                                 background-color: $color-background;
-                                border: 0.0781vw solid $color-C;
+                                border: 2px solid $color-C;
                                 border-bottom: 0;
                                 border-right: 0;
-                                position: absolute; bottom: -0.0781vw; right: -0.0391vw; 
+                                position: absolute; bottom: -2px; right: -1px; 
                                 z-index: 999;
                             }
                         }
@@ -135,50 +135,50 @@
                     .charger {
                         & + .charger { margin: 0; }
                         &:nth-child(1) {
-                            position: absolute; bottom: -0.0781vw; left: -8.2031vw;
-                            width: 8.2422vw;    
-                            height: 9.6484vw;
-                            padding: 1.4844vw 0.2734vw 0.3125vw;                                                                                                                                                                                                                                                     
+                            position: absolute; bottom: -2px; left: -210px;
+                            width: 211px;    
+                            height: 247px;
+                            padding: 38px 7px 8px;                                                                                                                                                                                                                                                     
                             background-color: $color-background;
-                            border: 0.0781vw solid $color-D;
+                            border: 2px solid $color-D;
                             border-right: 0; 
                             z-index: 999;                            
                         }
-                        &:nth-child(3) { margin-top: 1.9531vw; }
+                        &:nth-child(3) { margin-top: 50px; }
                     }
                 }
             }
             &.tetris-type3 {
                 .group-inner {
-                    width: 16.4063vw;
-                    height: calc(18.0469vw + 1.6406vw + 0.7813vw*2);
+                    width: 420px;
+                    height: calc(462px + 42px + 20px*2);
                     .charger {
                         &:nth-child(3) { align-self: flex-end; }
-                        &:nth-child(4) { align-self: flex-end; margin-left: 0.5469vw; }
+                        &:nth-child(4) { align-self: flex-end; margin-left: 14px; }
                     }
                 }
             } 
         }
         &-id {
             width: 100%;
-            height: 1.2500vw;
-            font-size: 0.5469vw;
+            height: 32px;
+            font-size: 14px;
             font-weight: 600;
-            line-height: 1.2500vw;
+            line-height: 32px;
             background-color: $color-A;
         }
         &-inner { 
             @include flex;
             flex-wrap: wrap;
             flex-direction: row;
-            padding: 0.3125vw 0.2344vw 0.2344vw; 
+            padding: 8px 6px 6px; 
             &.col {
                 flex-direction: column;
                 flex-wrap: wrap;
                 .charger {
                     & + .charger { 
                         margin-left: 0;  
-                        margin-top: 1.9531vw;
+                        margin-top: 50px;
                     }
                 }
             }
@@ -207,32 +207,32 @@
 }
 
 .charger {
-    & + .charger { margin-left: 0.3125vw; }    
+    & + .charger { margin-left: 8px; }    
     &-id {
        width: auto;
-       height: 1.3672vw;
-       font-size: 0.5469vw;
+       height: 35px;
+       font-size: 14px;
        font-weight: 600;
-       line-height: 1.3672vw;
+       line-height: 35px;
        background-color: $color-main-black;
        border-radius: $radius;
-       margin-bottom: 0.1563vw;
+       margin-bottom: 4px;
     }
     &-inner {
         @include flex;
         .connector {
-            width: 3.8281vw;
-            height: 6.2500vw;
+            width: 98px;
+            height: 160px;
             overflow: hidden;
             background-color: $color-sub-black;
-            border: 0.0391vw solid $color-border;
+            border: 1px solid $color-border;
             border-radius: $radius;
             & + .connector { 
                 border-top-left-radius: 0;
                 border-bottom-left-radius: 0;
             }
             &-id {
-                font-size: 0.4688vw;
+                font-size: 12px;
                 font-weight: 600;
                 line-height: 2; 
             }
@@ -241,51 +241,51 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                height: 5.1563vw;
+                height: 132px;
                 background-color: $color-main-black;
                 border-radius: $radius;
-                margin: 0 0.1172vw 0.1172vw 0.1172vw;
+                margin: 0 3px 3px 3px;
                 .type {
                     position: relative;
-                    width: 1.2500vw;
-                    height: 3.1250vw;
+                    width: 32px;
+                    height: 80px;
                     overflow: hidden;
-                    margin-top: 0.1563vw;
-                    background: url(../img/img_connector.png) no-repeat 0 0 / auto 3.1250vw;
+                    margin-top: 4px;
+                    background: url(../img/img_connector.png) no-repeat 0 0 / auto 80px;
                     &.a { background-position-x: 0; }
-                    &.b { width: 1.4063vw; background-position-x: -2.8125vw; }
-                    &.c { width: 1.4063vw; background-position-x: -5.7813vw; }
-                    &.d { background-position-x: -8.7500vw; }
-                    &.e { background-position-x: -11.5625vw; }
+                    &.b { width: 36px; background-position-x: -72px; }
+                    &.c { width: 36px; background-position-x: -148px; }
+                    &.d { background-position-x: -224px; }
+                    &.e { background-position-x: -296px; }
                     .percentage {
-                        width: 1.0156vw;
-                        height: 0.6250vw;
-                        font-size: 0.3125vw;
-                        line-height: 0.6250vw;
+                        width: 26px;
+                        height: 16px;
+                        font-size: 8px;
+                        line-height: 16px;
                         background-color: rgba($color-main-black, .8);
-                        border-radius: 0.6250vw;
-                        position: absolute; top: calc(50% - 0.3125vw); left: calc(50% - 0.5078vw);
+                        border-radius: 16px;
+                        position: absolute; top: calc(50% - 8px); left: calc(50% - 13px);
                     }
                 }
                 .status {
-                    width: 0.6250vw;
-                    height: 0.6250vw;
+                    width: 16px;
+                    height: 16px;
                     overflow: hidden;
-                    background: url(../img/ic_status.png) no-repeat 0 0 / auto 0.6250vw;
-                    margin: 0.1563vw 0;
+                    background: url(../img/ic_status.png) no-repeat 0 0 / auto 16px;
+                    margin: 4px 0;
                     &.Unknown { background-position-x: 0; }
-                    &.abnormality { background-position-x: -0.6250vw; }
-                    &.waiting { background-position-x: -1.2500vw; }
-                    &.charging { background-position-x: -1.8750vw; }
-                    &.stop { background-position-x: -2.5000vw; }
-                    &.inspection { background-position-x: -3.1250vw; }
-                    &.reservation { background-position-x: -3.7500vw; }
-                    &.unconfirmed { background-position-x: -4.3750vw; }
-                    &.pause { background-position-x: -5.0000vw; }
-                    &.complete { background-position-x: -5.6250vw; }
+                    &.abnormality { background-position-x: -16px; }
+                    &.waiting { background-position-x: -32px; }
+                    &.charging { background-position-x: -48px; }
+                    &.stop { background-position-x: -64px; }
+                    &.inspection { background-position-x: -80px; }
+                    &.reservation { background-position-x: -96px; }
+                    &.unconfirmed { background-position-x: -112px; }
+                    &.pause { background-position-x: -128px; }
+                    &.complete { background-position-x: -144px; }
                 }
                 .vin {
-                    font-size: 0.3906vw;
+                    font-size: 10px;
                     font-weight: 600;
                 }
             }
