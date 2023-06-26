@@ -3,7 +3,7 @@ $base_font_family:  'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', sans-serif !impor
 /* ------------------------------------------------------- COLOR ------------------------------------------------------- */
 $color-primary: #ED8533;
 $color-white: #ffffff;
-$color-gray: #777777;
+$color-gray: #999999;
 $color-background: #312f2d; //#272727; 
 
 $color-main-black: #1e1e1e;
@@ -16,6 +16,13 @@ $color-B: #EA5DC2;
 $color-C: #9D50FF;
 $color-D: #5076FF;
 $color-E: #28AD8D;
+
+/* ------------------------------------------------------- 일일누적량 구분별 색상 ------------------------------------------------------- */
+$green: #00ff58;
+$blue: #00d3ff;
+$red: #ff7474;
+$yellow: #ffd200;
+
 /* ------------------------------------------------------- LAYOUT ------------------------------------------------------- */
 $external-height: 100px;
 $gutter-xs: 8px; 
@@ -27,11 +34,11 @@ $gutter-xxl: 120px;
 $radius: 3px;
 
 
-$external-height: 3.9063vw;
-$gutter-xs: 0.3125vw; 
-$gutter-sm: 0.4688vw;
-$gutter-md: 0.7813vw; 
-$gutter-lg: 1.5625vw; 
-$gutter-xl: 3.1250vw;
-$gutter-xxl: 4.6875vw;
-$radius: 0.1172vw;
+$external-height: max(3.9063vw, 100px);
+$gutter-xs: max(0.3125vw, 8px); 
+$gutter-sm: max(0.4688vw, 12px);
+$gutter-md: max(0.7813vw, 20px); 
+$gutter-lg: max(1.5625vw, 40px); 
+$gutter-xl: max(3.1250vw, 80px);
+$gutter-xxl: max(4.6875vw, 120px);
+$radius: max(0.1172vw, 3px);

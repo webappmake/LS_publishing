@@ -1,0 +1,460 @@
+@charset "UTF-8";
+/* ------------------------------------------------------- FONT ------------------------------------------------------- */
+/* ------------------------------------------------------- COLOR ------------------------------------------------------- */
+/* ------------------------------------------------------- 충전기 그룹 색상 ------------------------------------------------------- */
+/* ------------------------------------------------------- LAYOUT ------------------------------------------------------- */
+body, div, h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd, a, img, p, span,
+form, fieldset, legend, label, input, select, button,
+table, caption, colgroup, col, thead, tbody, tr, th, td, address, tfoot,
+header, nav, footer, section, article, mark, figure, figcaption, time, aside, small, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+html, header, nav, footer, section, article, figure, figcaption, aside, small {
+  display: block;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  background-color: #312f2d;
+  color: #ffffff;
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif !important;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  margin-left: auto;
+  margin-right: auto;
+  word-break: keep-all;
+  -ms-word-break: keep-all;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif !important;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, fieldset, input, button {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+input, button, img {
+  vertical-align: middle;
+}
+
+.skip, caption {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+  line-height: 0;
+  font-size: 0;
+  position: absolute;
+  left: -999px;
+}
+
+.mt-xxl {
+  margin-top: 120px;
+}
+
+.ml-xl {
+  margin-left: 80px;
+}
+
+/*----------------------------------- Sample : 1920px 기준, 충전기 배치 영역 설정 -----------------------------------*/
+.sample {
+  height: 100vh;
+  background-color: #333;
+  text-align: center;
+}
+.sample .app-bar {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  color: cyan;
+  border: 1px dotted cyan;
+}
+.sample .container {
+  position: relative;
+  height: calc(100vh - 56px);
+  background-color: #272727;
+  padding: 12px;
+}
+.sample .container .search-area {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 54px;
+}
+.sample .container .search-area .search-form {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 12px;
+  background-color: #111;
+}
+.sample .container .search-area .btn {
+  padding: 9px 16px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.2;
+  background-color: #111;
+  border-radius: 3px;
+}
+.sample .container .search-area .btn + .btn {
+  margin-left: 8px;
+}
+.sample .container .contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: calc(100% - 54px);
+}
+.sample .container .contents .col {
+  flex-grow: 1;
+  height: 100%;
+  background-color: #2C2C2C;
+  border: 1px solid #434343;
+}
+.sample .container .contents .col + .col {
+  margin-left: 8px;
+}
+.sample .container .contents .col.charger-layout {
+  position: relative;
+  width: 1139px;
+  flex-grow: inherit;
+  flex-shrink: 0;
+}
+.sample .container .contents .col.charger-layout .layout {
+  width: 2560px;
+  height: 1440px;
+}
+.sample .container .contents .col.charger-layout .layout .external {
+  position: absolute !important;
+  border: 1px solid red !important;
+}
+
+/*----------------------------------- Common Layout -----------------------------------*/
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #312f2d;
+}
+.layout .external {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.layout .external.top {
+  width: 100%;
+  height: 100px;
+}
+.layout .external.right {
+  width: 100px;
+  height: 100%;
+  left: inherit;
+  right: 0;
+}
+.layout .external.bottom {
+  width: 100%;
+  height: 100px;
+  top: inherit;
+  bottom: 0;
+}
+.layout .external.left {
+  width: 100px;
+  height: 100%;
+}
+.layout .internal .row-title {
+  align-self: flex-start;
+  color: #ED8533;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.layout .internal .flex-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+.layout .internal .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+.layout .internal .row:last-of-type {
+  margin-bottom: 0;
+}
+.layout .internal .row .breakpoints {
+  height: 0;
+  flex-basis: 100%;
+}
+.layout .internal .row .breakpoints + .charger {
+  margin-left: 0;
+  margin-top: 50px;
+}
+
+.internal .group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FF5050;
+  border-radius: 3px;
+  text-align: center;
+}
+.internal .group.tetris {
+  position: relative;
+}
+.internal .group.tetris.tetris-type1 .group-inner {
+  width: 420px;
+  height: 462px;
+}
+.internal .group.tetris.tetris-type1 .group-inner .charger:nth-child(3) {
+  margin-top: 0;
+  margin-left: 14px;
+}
+.internal .group.tetris.tetris-type1 .group-inner .charger:nth-child(2)::before {
+  content: "";
+  width: 208px;
+  height: 247px;
+  background-color: #312f2d;
+  border: 2px solid #9D50FF;
+  border-bottom: 0;
+  border-right: 0;
+  position: absolute;
+  bottom: -2px;
+  right: -1px;
+  z-index: 999;
+}
+.internal .group.tetris.tetris-type2 .group-inner .charger + .charger {
+  margin: 0;
+}
+.internal .group.tetris.tetris-type2 .group-inner .charger:nth-child(1) {
+  position: absolute;
+  bottom: -2px;
+  left: -210px;
+  width: 211px;
+  height: 247px;
+  padding: 38px 7px 8px;
+  background-color: #312f2d;
+  border: 2px solid #5076FF;
+  border-right: 0;
+  z-index: 999;
+}
+.internal .group.tetris.tetris-type2 .group-inner .charger:nth-child(3) {
+  margin-top: 50px;
+}
+.internal .group.tetris.tetris-type3 .group-inner {
+  width: 420px;
+  height: 544px;
+}
+.internal .group.tetris.tetris-type3 .group-inner .charger:nth-child(3) {
+  align-self: flex-end;
+}
+.internal .group.tetris.tetris-type3 .group-inner .charger:nth-child(4) {
+  align-self: flex-end;
+  margin-left: 14px;
+}
+.internal .group-id {
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 32px;
+  background-color: #FF5050;
+}
+.internal .group-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 8px 6px 6px;
+}
+.internal .group-inner.col {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.internal .group-inner.col .charger + .charger {
+  margin-left: 0;
+  margin-top: 50px;
+}
+.internal .group.a {
+  border-color: #FF5050;
+}
+.internal .group.a .group-id {
+  background-color: #FF5050;
+}
+.internal .group.b {
+  border-color: #EA5DC2;
+}
+.internal .group.b .group-id {
+  background-color: #EA5DC2;
+}
+.internal .group.c {
+  border-color: #9D50FF;
+}
+.internal .group.c .group-id {
+  background-color: #9D50FF;
+}
+.internal .group.d {
+  border-color: #5076FF;
+}
+.internal .group.d .group-id {
+  background-color: #5076FF;
+}
+.internal .group.e {
+  border-color: #28AD8D;
+}
+.internal .group.e .group-id {
+  background-color: #28AD8D;
+}
+
+.charger + .charger {
+  margin-left: 8px;
+}
+.charger-id {
+  width: auto;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 35px;
+  background-color: #1e1e1e;
+  border-radius: 3px;
+  margin-bottom: 4px;
+}
+.charger-inner {
+  display: flex;
+}
+.charger-inner .connector {
+  width: 98px;
+  height: 160px;
+  overflow: hidden;
+  background-color: #272727;
+  border: 1px solid #3F3F3F;
+  border-radius: 3px;
+}
+.charger-inner .connector + .connector {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.charger-inner .connector-id {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2;
+}
+.charger-inner .connector-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 132px;
+  background-color: #1e1e1e;
+  border-radius: 3px;
+  margin: 0 3px 3px 3px;
+}
+.charger-inner .connector-info .type {
+  position: relative;
+  width: 32px;
+  height: 80px;
+  overflow: hidden;
+  margin-top: 4px;
+  background: url(../img/img_connector.png) no-repeat 0 0/auto 80px;
+}
+.charger-inner .connector-info .type.a {
+  background-position-x: 0;
+}
+.charger-inner .connector-info .type.b {
+  width: 36px;
+  background-position-x: -72px;
+}
+.charger-inner .connector-info .type.c {
+  width: 36px;
+  background-position-x: -148px;
+}
+.charger-inner .connector-info .type.d {
+  background-position-x: -224px;
+}
+.charger-inner .connector-info .type.e {
+  background-position-x: -296px;
+}
+.charger-inner .connector-info .type .percentage {
+  width: 26px;
+  height: 16px;
+  font-size: 8px;
+  line-height: 16px;
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: 16px;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 13px);
+}
+.charger-inner .connector-info .status {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: url(../img/ic_status.png) no-repeat 0 0/auto 16px;
+  margin: 4px 0;
+}
+.charger-inner .connector-info .status.Unknown {
+  background-position-x: 0;
+}
+.charger-inner .connector-info .status.abnormality {
+  background-position-x: -16px;
+}
+.charger-inner .connector-info .status.waiting {
+  background-position-x: -32px;
+}
+.charger-inner .connector-info .status.charging {
+  background-position-x: -48px;
+}
+.charger-inner .connector-info .status.stop {
+  background-position-x: -64px;
+}
+.charger-inner .connector-info .status.inspection {
+  background-position-x: -80px;
+}
+.charger-inner .connector-info .status.reservation {
+  background-position-x: -96px;
+}
+.charger-inner .connector-info .status.unconfirmed {
+  background-position-x: -112px;
+}
+.charger-inner .connector-info .status.pause {
+  background-position-x: -128px;
+}
+.charger-inner .connector-info .status.complete {
+  background-position-x: -144px;
+}
+.charger-inner .connector-info .vin {
+  font-size: 10px;
+  font-weight: 600;
+}

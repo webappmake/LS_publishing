@@ -8,15 +8,158 @@
   <meta http-equiv="Expires" content="0"/>
   <meta http-equiv="Pragma" content="no-cache"/>  
   <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <!-- lib : scrollabar는 기존에 사용하시던 것을 사용하시면 됩니다 -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="lib/jquery.mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+  <link rel="stylesheet" type="text/css" href="lib/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css" />
   <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 <body>
   <section class="sample">
-    <h2>충전소별 도면 정보</h2>
-    <button onclick="window.open('./pages/6_용당동.html');">용당동</button>
-    <button onclick="window.open('./pages/7_장림동.html');">장림동</button>
-    <button onclick="window.open('./pages/8_부산강서차고지.html');">부산강서차고지</button>
-    <button onclick="window.open('./pages/9_SE모빌리티안녕동.html');">SE모빌리티 안녕동 </button>   
-  </section>
+    <div class="app-bar">App Bar</div>
+    <main class="container">
+      <div class="search-area">
+        <div class="search-form">검색조건 입력폼</div>
+        <div class="btn-group">
+          <button class="btn">새창</button>
+          <button class="btn">조회</button>
+        </div>        
+      </div>
+      <section class="contents">
+        <article class="col">
+          <h3 class="skip">Column</h3>
+          <div class="">
+            <h4 class="col-title">일일 누적량 (전일/금일)</h4>
+            <div class="col-content">
+              <table class="table" cellpadding="0" cellspacing="0" summary="sampleTable" >
+                <caption>SampleTable</caption>
+                <colgroup>
+                  <col width="*"/>
+                  <col width="100"/>
+                  <col width="100"/>
+                  <col width="100"/>
+                  <col width="100"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col" rowspan="2">구분</th>
+                    <th scope="col" colspan="2">전일</th>
+                    <th scope="col" colspan="2">금일</th>
+                  </tr>
+                  <tr>
+                    <th scope="col">충전량(kWh)</th>
+                    <th scope="col">백분률(%)</th>
+                    <th scope="col">충전량(kWh)</th>
+                    <th scope="col">백분률(%)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="green">
+                    <td>경부하</td>
+                    <td class="right">12,345</td>
+                    <td class="right">12</td>
+                    <td class="right">12,345</td>
+                    <td class="right">12</td>
+                  </tr>
+                  <tr class="blue">
+                    <td>중간부하</td>
+                    <td class="right">1,234</td>
+                    <td class="right">12</td>
+                    <td class="right">123</td>
+                    <td class="right">1</td>
+                  </tr>
+                  <tr class="red">
+                    <td>최대부하</td>
+                    <td class="right">1,234</td>
+                    <td class="right">1</td>
+                    <td class="right">0</td>
+                    <td class="right">-</td>
+                  </tr>
+                  <tr class="yellow">
+                    <td>합계</td>
+                    <td class="right">12,345</td>
+                    <td class="right">-</td>
+                    <td class="right">12,345</td>
+                    <td class="right">-</td>
+                  </tr>				
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h4 class="col-title">일일 누적량 그래프 (지난 30일)</h4>
+            <div>
+              
+            </div>
+          </div>
+          <div>
+            <h4 class="col-title">충전기 사용 현황</h4>
+            <div class="charger-usage">
+              <span class="red">1</span>
+              <span class="blue">2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+              <span class="blue">11</span>
+              <span>12</span>
+              <span>13</span>
+              <span>14</span>
+              <span>15</span>
+              <span>16</span>
+              <span>17</span>
+              <span>18</span>
+              <span>19</span>
+              <span>20</span>
+              <span>21</span>
+              <span>22</span>
+              <span>23</span>
+              <span>24</span>
+              <span>25</span>
+              <span>26</span>
+              <span>27</span>
+              <span>28</span>
+              <span>29</span>
+              <span>30</span>
+              <span>31</span>
+              <span>32</span>
+              <span>33</span>
+              <span>34</span>
+              <span>35</span>
+              <span>36</span>
+              <span>37</span>
+            </div>
+          </div>
+        </article>
+        <article class="col charger-layout">
+          <h3 class="skip">충전기 배치(충전소별 도면 정보)</h3>
+        </article>
+        <article class="col">
+          <h3 class="skip">Column</h3>
+        </article>
+      </section>
+      <!-- <h2>충전소별 도면 정보</h2>
+      <button onclick="window.open('./pages/6_용당동.html');">용당동</button>
+      <button onclick="window.open('./pages/7_장림동.html');">장림동</button>
+      <button onclick="window.open('./pages/8_부산강서차고지.html');">부산강서차고지</button>
+      <button onclick="window.open('./pages/9_SE모빌리티안녕동.html');">SE모빌리티 안녕동 </button>-->
+    </div>    
+  </main>
 </body>
+<script type='text/javascript'>
+    $(function() {
+      //mCustomScrollbar
+      $(window).on("load",function(){
+            $(".charger-layout").mCustomScrollbar({
+              axis:"yx",
+              theme:"minimal-dark",
+              mouseWheel:{ preventDefault: true }
+            });
+        });
+    });
+</script>
 </html>
